@@ -19,9 +19,7 @@ class _MeteoPageState extends State<MeteoPage> {
   List<dynamic>? forecast;
 
   Future<void> fetchWeather() async {
-    final apiKey = kIsWeb
-        ? '' 
-        : dotenv.env['OPENWEATHER_API_KEY'];
+    final apiKey = "a1a580bf645ef35dfe8dd13418ace719";
 
     if (apiKey == null || apiKey.isEmpty) {
       print("❌ API key not found. Please check .env file or provide a key.");
